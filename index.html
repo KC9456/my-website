@@ -1,111 +1,172 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <title>曾楷宸</title>
+<meta charset="UTF-8">
+<title>曾楷宸</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
-    header {
-      text-align: center;
-      padding: 50px;
-      background: #1e293b;
-    }
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
 
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
+.subtitle {
+  opacity: 0.85;
+  margin-top: 10px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
-  </style>
+/* Section */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(15, 23, 42, 0.8);
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.3);
+}
+
+ul {
+  line-height: 1.8;
+}
+
+/* Project */
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0ea5e9;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background: #38bdf8;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
   <h1>曾楷宸</h1>
-  <p>Automation Engineering Student | Problem Solver</p>
+  <p class="subtitle">Automation Engineering Student | Future Engineer</p>
+  <p class="subtitle">Specializing in Automation, Robotics, and System Development</p>
 </header>
 
 <section>
 
-  <div class="card">
-    <h2>關於我</h2>
-    <p>
-      我目前就讀於勤益科技大學智慧自動化工程學系，具備良好的自學能力與工程實作經驗。
-      在學習過程中，我培養出問題分析與解決能力，並能透過程式與系統設計實現想法。
-    </p>
-  </div>
+<div class="card">
+  <h2>關於我</h2>
+  <p>
+    我目前就讀於勤益科技大學智慧自動化工程學系，具備良好的自學能力與工程實作經驗。
+    擅長透過程式與系統設計解決問題，並持續精進自動化與機器人相關技術。
+  </p>
+</div>
 
-  <div class="card">
-    <h2>學歷</h2>
-    <p>勤益科技大學 智慧自動化工程學系（在學中）</p>
-    <ul>
-      <li>修習自動化控制、程式設計與系統整合課程</li>
-      <li>具備工程分析與實作能力</li>
-      <li>透過專題培養系統開發與問題解決能力</li>
-    </ul>
-  </div>
+<div class="card">
+  <h2>學歷</h2>
+  <p>勤益科技大學 智慧自動化工程學系（在學中）</p>
+  <ul>
+    <li>修習自動化控制、程式設計與系統整合課程</li>
+    <li>具備工程分析與實作能力</li>
+    <li>完成 Unity 模擬系統專題</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>技能</h2>
-    <ul>
-      <li>程式語言：Python、C</li>
-      <li>開發工具：Unity、Arduino</li>
-      <li>工程能力：系統設計、問題分析、除錯能力</li>
-    </ul>
-  </div>
+<div class="card">
+  <h2>技能</h2>
+  <ul>
+    <li>程式語言：Python、C</li>
+    <li>開發工具：Unity、Arduino</li>
+    <li>工程能力：系統設計、除錯、問題分析</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>專題經驗</h2>
-    <p><b>Unity 模擬系統開發</b></p>
-    <ul>
-      <li>使用 Unity 建立模擬系統</li>
-      <li>負責程式開發與功能實作</li>
-      <li>進行除錯與系統優化</li>
-    </ul>
-  </div>
+<div class="card">
+  <h2>證照</h2>
+  <ul>
+    <li>電腦輔助機械製圖丙級技術士（熟悉CAD繪圖與工程圖判讀）</li>
+    <li>機械加工丙級技術士（具備加工流程與機台操作基礎）</li>
+    <li>機器人工程師證照（具備自動化系統與機器人應用基礎）</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>工作經驗</h2>
-    <ul>
-      <li>打工期間快速熟悉工作流程，展現良好學習能力</li>
-      <li>具備責任感，能在壓力下完成任務</li>
-      <li>提升溝通能力與團隊合作經驗</li>
-    </ul>
-  </div>
+<div class="card">
+  <h2>專題展示</h2>
+  <p><b>Unity 模擬系統開發</b></p>
+  <ul>
+    <li>使用 Unity 建立模擬系統</li>
+    <li>負責程式開發與功能設計</li>
+    <li>進行系統除錯與效能優化</li>
+  </ul>
 
-  <div class="card">
-    <h2>個人特質</h2>
-    <ul>
-      <li>自學能力強，能快速掌握新技術</li>
-      <li>具備抗壓性，能在期限內完成任務</li>
-      <li>透過健身培養自律與長期規劃能力</li>
-    </ul>
-  </div>
+  <img src="https://picsum.photos/800/400" class="project-img">
 
-  <div class="card">
-    <h2>聯絡方式</h2>
-    <p>Email:oscar2005945006@gmail.com</p>
-  </div>
+  <a href="#" class="button">View Project</a>
+</div>
+
+<div class="card">
+  <h2>工作經驗</h2>
+  <ul>
+    <li>快速學習工作流程並獨立完成任務</li>
+    <li>具備責任感與抗壓性</li>
+    <li>提升溝通能力與團隊合作經驗</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>個人特質</h2>
+  <ul>
+    <li>自學能力強，能快速掌握新技術</li>
+    <li>具備抗壓性，能在期限內完成任務</li>
+    <li>透過健身培養高度自律與執行力</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>聯絡方式</h2>
+  <p>Email: oscar2005945006@gmail.com</p>
+</div>
 
 </section>
 
